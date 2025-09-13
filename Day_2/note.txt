@@ -1,0 +1,14 @@
+1. Strong Number: 
+It is a positive integer whose sum of the factorial of its digits is equal to the number itself. For example, 145 is a strong number because 1! + 4! + 5! = 145.
+
+
+2. Array Operations:
+ - Access -> array[index]
+ - update -> arr[idx] = newValue
+ - Insert at start -> arr.unshift();
+ - insert at the end -> arr.pop()
+ - delete at start -> arr.shift()
+ - delete at the end -> arr.pop()
+ - length of the array -> arr.length
+
+3. Sum of array elements
