@@ -90,3 +90,4 @@
 // console.log(isArmStrong(153));
 // console.log(isArmStrong(9474));
 //+++++++++++++++++++++++++++++++++++++++
+//print all divisors of a number
