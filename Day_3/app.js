@@ -74,18 +74,19 @@
 
 //ArmStrong Number-> A number is knowns as an Armstrong number if the sum of its digits each raised to power of the count of the digits is equal to the number itself.
 
-function isArmStrong(n){
-        let temp = n;
-        let count = n.toString().length;
-        let sum = 0;
-        while(n>0){
-            dig = n % 10;
-            sum = sum + (dig ** count);
-            n = Math.floor(n/10);
-        }
-        return sum === temp ? `${temp} is an ArmStrong Number` : `${temp} is Not an ArmStrong Number`;
-}
+// function isArmStrong(n){
+//         let temp = n;
+//         let count = n.toString().length;
+//         let sum = 0;
+//         while(n>0){
+//             dig = n % 10;
+//             sum = sum + (dig ** count);
+//             n = Math.floor(n/10);
+//         }
+//         return sum === temp ? `${temp} is an ArmStrong Number` : `${temp} is Not an ArmStrong Number`;
+// }
 
-console.log(isArmStrong(123));
-console.log(isArmStrong(153));
-console.log(isArmStrong(9474));
+// console.log(isArmStrong(123));
+// console.log(isArmStrong(153));
+// console.log(isArmStrong(9474));
+//+++++++++++++++++++++++++++++++++++++++
