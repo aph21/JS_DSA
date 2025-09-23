@@ -90,4 +90,27 @@
 // console.log(isArmStrong(153));
 // console.log(isArmStrong(9474));
 //+++++++++++++++++++++++++++++++++++++++
-//print all divisors of a number
+
+// Armstrong number in a given range
+
+
+// function isArmStrongRange(start, end){
+//     for(let i = start; i <= end; i++){
+//         let n = i;
+//         let temp = i;
+//         let cnt = n.toString().length;
+//         let sum = 0;
+
+//         while (n > 0){
+//             let ld = n % 10;
+//             sum = sum + (ld ** cnt);
+//             n = Math.floor(n /10);
+//         }
+//         if(temp === sum) {
+//             console.log(temp);
+//         }
+//     }
+// }
+// console.log(isArmStrongRange(100,1000))
+
+//+++++++++++++++++++++++++++++++++++++++++++
