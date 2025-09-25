@@ -1,0 +1,8 @@
+5. Reverse an array.
+method 1: time = O(n) and space = O(n) -> because uses extra space when creates an extra array called temp.
+method 2: using two pointer swap. time = O(n) and space = O(1) 
+method 3: Using Simple Loop with Push time = O(n) and Space = O(n) 
+method 4: Efficient:
+- Each iteration does 1 swap, total ~n/2 swaps.
+- Time Complexity: O(n)
+- Space Complexity: O(1) (just temp).
