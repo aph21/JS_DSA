@@ -119,14 +119,31 @@
 // console.log(temp);
 
 //Method 4: 
-let arr = [1,2,3,4,5,6];
-let i = 0, j = arr.length - 1;
+// let arr = [1,2,3,4,5,6];
+// let i = 0, j = arr.length - 1;
 
-while(i < j) {
-    temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
+// while(i < j) {
+//     temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+// console.log(arr);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// 6. All zeros to left and all ones to right.
+
+let arr = [1,0,0,0,1,1,1,0,1,0,1,0,1];
+let i = 0, j = 0;
+while(i<arr.length){
+    if(arr[i] === 0){
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        j++;
+    }
     i++;
-    j--;
 }
 console.log(arr);
