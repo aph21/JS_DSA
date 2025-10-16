@@ -19,13 +19,13 @@ function bubbleSort(arr){
     }
     return arr;
 }
-console.log(bubbleSort([6, 3, 1, 8, 12, 2, 5]));
+// console.log(bubbleSort([6, 3, 1, 8, 12, 2, 5]));
 
 //here we have used -i in inner loop because after each pass through the list,
 // the largest element will be at the end of the list, so we don't need to compare it again.
 
 //Approach 2: optimized version using flag 
-//Time complexity : O(n^2)
+//Time complexity : O(n)
 //Space complexity : O(1)
 //definition : It's a simple sorting algorithm that repeatedly steps through the list,
 // compares adjacent elements and swaps them if they are in wrong order.
@@ -47,4 +47,30 @@ function bubbleSort1(arr1){
     }
     return arr1;
 }
-console.log(bubbleSort1([6, 22, 1, 8, 12, 2, 5]));
+// console.log(bubbleSort1([6, 22, 1, 8, 12, 2, 5]));
+
+//===============================================================================
+
+// Selection sort :
+//Time complexity : O(n^2)
+//Space complexity : O(1)
+//definition : It's a simple sorting algorithm that repeatedly steps through the list,
+// finds the minimum element and swaps it with the element at the current position.
+// The pass through the list is repeated until the list is sorted.
+
+function selectionSort(arr){
+    for(let i = 0; i < arr.length; i++){
+        let minIdx = i;
+        for(let j = i + 1; j < arr.length; j++) {
+            if(arr[j] < arr[minIdx]) {
+                minIdx = j;
+            }
+        }
+        if(minIdx !== i){
+            [arr[i], arr[minIdx]] = [arr[minIdx], arr[i]];
+        }
+    }
+    return arr;
+}
+console.log(selectionSort([6, 3, 1, 8, 12, 2, 5]));
+
