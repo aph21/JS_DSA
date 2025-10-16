@@ -72,5 +72,28 @@ function selectionSort(arr){
     }
     return arr;
 }
-console.log(selectionSort([6, 3, 1, 8, 12, 2, 5]));
+// console.log(selectionSort([6, 3, 1, 8, 12, 2, 5]));
+
+//==========================================================================
+
+//Insertion sort:
+//Time complexity : O(n^2)
+//Space complexity : O(1)
+//definition : It's a simple sorting algorithm that repeatedly steps through the list,
+// compares adjacent elements and swaps them if they are in wrong order.
+// The pass through the list is repeated until the list is sorted.
+
+function insertionSort(arr) {
+    for(let i = 1; i < arr.length; i++) {
+        let key = arr[i];
+        let j = i - 1;
+        while( j >= 0 && arr[j] > key) {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = key;
+    }
+    return arr;
+}
+// console.log(insertionSort([6, 3, 1, 8, 12, 2, 5]));
 
